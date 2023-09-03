@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: jd_quiz
+  pool: 5
+  host: localhost
+  username: jd4codes
+  password: password1
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: jd_quiz_test
+  pool: 5
+  username: jd4codes
+  password: password1
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  url: <%= ENV['DATABASE_URL'] %> 

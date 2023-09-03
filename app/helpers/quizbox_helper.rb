@@ -1,0 +1,2 @@
+module QuizboxHelper
+end
